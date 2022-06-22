@@ -34,3 +34,10 @@ ax_2.set(title = 'ax_2', xticks=[], yticks=[])
 ax_3.set(title = 'ax_3', xticks=[], yticks=[])
 ax_4.set(title = 'ax_4', xticks=[], yticks=[])
 plt.show()
+
+fig, axes = plt.subplots(nrows=3, ncols=3)
+n = 1
+for ax in axes.flat:
+    ax.set(title='axes_' + str(n), xticks=[], yticks=[])
+    n += 1
+plt.show()

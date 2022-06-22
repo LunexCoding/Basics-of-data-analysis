@@ -1,4 +1,8 @@
+import matplotlib
 import matplotlib.pyplot as plt
+
+print(matplotlib.__version__)
+print(matplotlib.get_backend())
 
 plt.plot((0, 3, 1, 2, 1, 5, 4, 0))
 plt.show()
@@ -28,3 +32,4 @@ plt.boxplot([[1, 5, 7, 4, 6, 10, 15],
              [-2, 5, 7, 4, 6, 10, 15],
              [-4, 5, 7, 4, 6, 10]])
 plt.show()
+
