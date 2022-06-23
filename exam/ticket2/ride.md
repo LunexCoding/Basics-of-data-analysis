@@ -4,6 +4,7 @@
 
     * INT
     * FLOAT
+    * COMPLEX
 
 2. Если частное двух целых чисел (int) не является целым числом, то оно будет преобразовано…
 
@@ -24,7 +25,5 @@ class Number:
         return abs(self._num + other._num)
 
 
-numFirst = Number(3)
-numSecond = Number(1)
-print(numFirst + numSecond)
+print(Number(3) + Number(1))
 ```
